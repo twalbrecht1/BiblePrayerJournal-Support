@@ -1,0 +1,57 @@
+name: Bible & Prayer Journal support request
+description: Report a problem or ask a question about the app
+title: "Support: "
+labels:
+  - question
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for contacting Bible & Prayer Journal support.
+
+        This request is public. Do not include private journal entries, prayer requests, personal details, or API keys. Use a general example when describing a problem.
+  - type: dropdown
+    id: device
+    attributes:
+      label: Device
+      options:
+        - iPhone
+        - iPad
+        - More than one device
+    validations:
+      required: true
+  - type: input
+    id: system-version
+    attributes:
+      label: iOS or iPadOS version
+      placeholder: "Example: iOS 26.5"
+    validations:
+      required: true
+  - type: input
+    id: app-version
+    attributes:
+      label: App version
+      placeholder: "Example: 1.0"
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area of the app
+      options:
+        - Daily Bible Journal
+        - Prayer Journal
+        - Memory Verses
+        - Verse of the Day
+        - Topics and Review
+        - Profiles and Settings
+        - Bible imports and connection
+        - Export and sharing
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: question
+    attributes:
+      label: How can we help?
+      description: Describe the issue and the steps to reproduce it without including private writing, personal details, or credentials.
+    validations:
+      required: true

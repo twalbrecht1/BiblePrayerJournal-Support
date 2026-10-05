@@ -1,0 +1,29 @@
+name: Bible & Prayer Journal feedback
+description: Share an idea or tell us about your experience
+title: "Feedback: "
+labels:
+  - enhancement
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for helping improve Bible & Prayer Journal.
+
+        This feedback is public. Please leave out private journal writing, prayer requests, personal details, and API keys.
+  - type: dropdown
+    id: feedback-type
+    attributes:
+      label: Feedback type
+      options:
+        - Feature idea
+        - Improvement
+        - General feedback
+    validations:
+      required: true
+  - type: textarea
+    id: feedback
+    attributes:
+      label: What would you like to share?
+      description: Tell us about your idea or experience using a general example.
+    validations:
+      required: true
