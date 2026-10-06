@@ -23,9 +23,9 @@
   </header>
   <main class="policy-page" id="main">
     <div class="policy-heading">
-      <p class="eyebrow">Last updated October 5, 2026</p>
+      <p class="eyebrow">Last updated October 6, 2026</p>
       <h1>Privacy Policy</h1>
-      <p class="lead">Your journal writing stays on your device. Scripture imports connect to outside providers as described below.</p>
+      <p class="lead">Your journal writing is saved on your device and, from version 1.1, syncs through your private iCloud account when available. Scripture imports connect separately to outside providers.</p>
     </div>
     <div class="policy-content">
       <section>
@@ -33,8 +33,8 @@
         <p>The app stores the information you choose to enter, including profile names, activity preferences, Bible versions, journal entries, passage references, verse text, reflections, prayer requests and answers, dates, topics, favorites, and memory verse practice history.</p>
       </section>
       <section>
-        <h2>Local storage and profiles</h2>
-        <p>Profiles and entries are stored locally on the device. The current version does not include iCloud sync, server accounts, or an online journal database. The developer does not receive your profile names, reflections, or prayers through the app. Profiles separate writing within the app but are not password protected; anyone with access to the app on your unlocked device may access them.</p>
+        <h2>Local storage, iCloud sync, and profiles</h2>
+        <p>Profiles and entries are stored locally so saved writing is available offline. From version 1.1, profiles, settings, topic catalogs, and journal entries—including reflections, prayers and answers, verse text and attribution, favorites, and memory practice metadata—also synchronize through Apple’s CloudKit service in your private iCloud account when enabled. Apple stores and processes this data to provide synchronization between devices using the same Apple Account, under its <a href="https://www.apple.com/legal/privacy/">privacy policy</a>. The journal is not published to a public CloudKit database or sent to a developer-hosted journal server. The developer does not receive your profile names, reflections, or prayers through the app. You can control the app’s iCloud access in device Settings; disabling sync or signing out does not delete existing local writing. Profiles separate writing but are not password protected; anyone with access to the app on your unlocked device may access them.</p>
       </section>
       <section>
         <h2>Scripture imports</h2>
@@ -42,7 +42,7 @@
       </section>
       <section>
         <h2>API keys and Scripture usage reports</h2>
-        <p>API.Bible keys are stored per profile in this device’s iOS Keychain. They are not included in journal exports or embedded in the app. When API.Bible content is displayed, the app sends the provider its Scripture usage tokens with randomly generated installation and session identifiers. These reports do not contain your name or journal writing. See <a href="https://docs.api.bible/guides/fair-use/">API.Bible’s usage reporting guidance</a>.</p>
+        <p>API.Bible keys are stored per profile in this device’s iOS Keychain. They remain on that device and are not synchronized through CloudKit, included in journal exports, or embedded in the app. Enter the key separately on another device when licensed imports are needed; translation selections synchronize with the profile. When API.Bible content is displayed, the app sends the provider its Scripture usage tokens with randomly generated installation and session identifiers. These reports do not contain your name or journal writing. See <a href="https://docs.api.bible/guides/fair-use/">API.Bible’s usage reporting guidance</a>.</p>
       </section>
       <section>
         <h2>Advertising and analytics</h2>
@@ -58,7 +58,7 @@
       </section>
       <section>
         <h2>Retention and deletion</h2>
-        <p>Entries remain on the device until you delete them or remove the app’s local data. Deleting a profile removes that profile’s entries and attempts to remove its stored API key. You can explicitly remove a key in <strong>Settings → Bible Connection → Remove connection</strong>. Keychain credentials can remain after uninstalling an app, so remove the connection before uninstalling if you want to remove those credentials as well. Keep a backup of writing you want to retain.</p>
+        <p>Entries remain in local storage and, when synchronized, your private iCloud database until you delete them. Entry and profile deletions propagate to iCloud and other synced devices when connected. Deleting a profile removes its entries and attempts to remove the API key on the device where you perform the deletion; Keychain credentials on other devices may remain. Uninstalling the app, signing out of iCloud, or disabling sync does not delete writing already stored in iCloud. Delete unwanted profiles or entries while sync is available if you want those deletions to reach your other devices. You can explicitly remove a key in <strong>Settings → Bible Connection → Remove connection</strong>. Keychain credentials can remain after uninstalling an app, so remove the connection before uninstalling if you want to remove those credentials as well. Keep a backup of writing you want to retain.</p>
       </section>
       <section>
         <h2>Policy changes and contact</h2>

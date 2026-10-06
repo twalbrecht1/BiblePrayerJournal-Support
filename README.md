@@ -8,4 +8,4 @@ Public support, feedback, and privacy pages for the Bible & Prayer Journal iPhon
 
 GitHub Pages publishes from the root of the `main` branch. The site uses plain HTML and CSS with no build dependencies or tracking scripts. Preview locally with `python3 -m http.server 8765 --bind 127.0.0.1`.
 
-The privacy policy describes the current app: local journal storage, no iCloud sync, per-profile Keychain credentials, Scripture provider requests and API.Bible usage reports, and user-directed exports. Update the support content and policy when these behaviors change.
+The privacy policy describes the current app: offline local storage and private iCloud sync from app version 1.1, per-device/per-profile Keychain credentials, Scripture provider requests and API.Bible usage reports, and user-directed exports. Update the support content and policy when these behaviors change.

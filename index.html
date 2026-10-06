@@ -47,7 +47,7 @@
       <div class="faq-grid">
         <article class="faq-item">
           <h3>How do I get started?</h3>
-          <p>Create a profile with your name, choose a Bible version, and select your activities. Profiles do not require an account or password. Use <strong>Settings → Edit name &amp; activities</strong> to change your choices, or <strong>Add profile</strong> to create another space.</p>
+          <p>In version 1.1, first let iCloud check for an existing profile from your other device. If one arrives, it opens automatically. If this is your first journal, create a profile with your name, choose a Bible version, and select your activities. You can also choose <strong>Create a new profile</strong> while iCloud is checking if you want a separate space. Profiles do not require an account or password. Use <strong>Settings → Edit name &amp; activities</strong> to change your choices, or <strong>Add profile</strong> to create another space.</p>
         </article>
         <article class="faq-item">
           <h3>Can I add more than one reading each day?</h3>
@@ -59,7 +59,7 @@
         </article>
         <article class="faq-item">
           <h3>Why does Bible Connection ask for an API key?</h3>
-          <p>The current app uses manual API.Bible setup for NLT and NIV. Enter your key under <strong>Settings → Bible Connection</strong> and tap <strong>Save key &amp; find translations</strong>. Access depends on your account and the translation license. There is no shared app connection yet. For immediate imports without a key, choose WEB or KJV.</p>
+          <p>The current app uses manual API.Bible setup for NLT and NIV. Your API key stays in each device’s Keychain and does not sync. Enter it on each device under <strong>Settings → Bible Connection</strong> and tap <strong>Save key &amp; find translations</strong>. Access depends on your account and the translation license. There is no shared app connection yet. For immediate imports without a key, choose WEB or KJV.</p>
         </article>
         <article class="faq-item">
           <h3>Can I import ESV?</h3>
@@ -87,11 +87,19 @@
         </article>
         <article class="faq-item">
           <h3>Does my writing sync between devices?</h3>
-          <p>The current version saves writing on the device and does not include iCloud sync. Saved entries work offline. Use <strong>Settings → Export this profile’s journal</strong> to save a JSON backup to Files. An import/restore feature is not currently included.</p>
+          <p>Version 1.1 syncs profiles, topics, settings, readings, prayers, and memory verses through your private iCloud account. Install the updated app on both devices, use the same Apple Account with iCloud enabled, and keep both apps open and connected for the first transfer. <strong>Settings → iCloud sync</strong> shows the account state and successful upload/download times. Saved entries still work offline. Use <strong>Settings → Export this profile’s journal</strong> to save a JSON backup to Files. An import/restore feature is not currently included.</p>
+        </article>
+        <article class="faq-item">
+          <h3>Why is my iPhone profile missing on iPad?</h3>
+          <p>Earlier versions stored writing only on each device. Update both devices to version 1.1 without uninstalling the iPhone app. Check that both use the same Apple Account and have iCloud enabled, then allow time for the iPhone to upload and the iPad to download. Use the same app release on both devices. If an account or transfer fails, the app shows the problem instead of assuming your journal is empty.</p>
+        </article>
+        <article class="faq-item">
+          <h3>What if I already created a second profile on iPad?</h3>
+          <p>Both profiles are kept, even if their names match. After syncing, use <strong>Settings → Profile management</strong> to select the original iPhone profile. Profiles are identified separately and are not merged by name. Keep any writing in the other profile until you have saved or copied what you need.</p>
         </article>
         <article class="faq-item">
           <h3>What happens when I remove a profile or activity?</h3>
-          <p>Turning off an activity keeps its entries available in Review. Deleting a profile removes its writing and Bible connection from that device and requires typing its name to confirm. Export any writing you want to keep before deleting a profile. Profiles organize entries but do not lock them with a password.</p>
+          <p>Turning off an activity keeps its entries available in Review. Deleting a profile removes its writing from this device and iCloud, including other synced devices once they connect, and requires typing its name to confirm. The app also attempts to remove the API key stored on the device where you delete the profile. Export any writing you want to keep before deleting a profile. Profiles organize entries but do not lock them with a password.</p>
         </article>
       </div>
     </section>
