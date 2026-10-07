@@ -44,6 +44,7 @@
         <p class="eyebrow">Common Questions</p>
         <h2>Using your journal</h2>
       </div>
+      <p class="lead">The version 1.2 Bible import update is prepared and awaiting activation of the app’s shared service. Devices currently on version 1.1 still use the earlier connection screen.</p>
       <div class="faq-grid">
         <article class="faq-item">
           <h3>How do I get started?</h3>
@@ -55,11 +56,19 @@
         </article>
         <article class="faq-item">
           <h3>How do I import Bible verses?</h3>
-          <p>Enter a passage such as <strong>John 3:16–17</strong> or <strong>Psalm 23</strong>, select a version, and tap <strong>Import verses</strong>. WEB and KJV work without an API account. Imports require an internet connection; you can also enter verse text manually.</p>
+          <p>Enter a passage such as <strong>John 3:16–17</strong> or <strong>Psalm 23</strong>, select a version, and tap <strong>Import verses</strong>. WEB and KJV work without an API account. Version 1.2 adds app-managed NIV, NLT, and NASB imports once the shared service is activated, with no provider account or API key needed by users. Import one chapter or a same-chapter verse range, up to 100 verses. Imports require an internet connection; you can also enter verse text manually.</p>
         </article>
         <article class="faq-item">
-          <h3>Why does Bible Connection ask for an API key?</h3>
-          <p>The current app uses manual API.Bible setup for NLT and NIV. Your API key stays in each device’s Keychain and does not sync. Enter it on each device under <strong>Settings → Bible Connection</strong> and tap <strong>Save key &amp; find translations</strong>. Access depends on your account and the translation license. There is no shared app connection yet. For immediate imports without a key, choose WEB or KJV.</p>
+          <h3>Do I need an API.Bible account or key?</h3>
+          <p>Version 1.2 removes the personal API-key field and account signup link. The app owner manages one shared API.Bible connection for NIV, NLT, and NASB; users only choose a version. The service is awaiting activation, so these imports are not live yet. Version 1.1 still shows the old <strong>Bible Connection</strong> screen. WEB and KJV work without a key in either version.</p>
+        </article>
+        <article class="faq-item">
+          <h3>Will imported passages and my notes work offline?</h3>
+          <p>Your own reflections, prayers, topics, and memory practice history remain saved and available offline. In version 1.2, new licensed imports save references and editions with your writing. NIV, NLT, and NASB text uses a temporary device cache, refreshed within 30 days; an expired or uncached passage needs an internet connection. Sharing and journal exports include your writing and licensed references rather than copies of licensed Bible text. Manually entered and public-domain text keeps its previous behavior.</p>
+        </article>
+        <article class="faq-item">
+          <h3>What happens if the free Bible allowance is reached?</h3>
+          <p>The shared connection uses API.Bible’s free, noncommercial Starter allowance across the app. If the allowance is reached or a licensed translation is unavailable, the app explains the problem and keeps your draft. WEB, KJV, and manual entry remain available. A requested translation is never silently replaced with another version.</p>
         </article>
         <article class="faq-item">
           <h3>Can I import ESV?</h3>
@@ -75,11 +84,11 @@
         </article>
         <article class="faq-item">
           <h3>How do I find an older reflection?</h3>
-          <p>Use <strong>Review</strong> to search verse references, Scripture, thoughts, prayers, and topics. Combine the activity, topic, date, and favorites filters. Topic chips show entry counts. Change the entry order in Settings or with the sort button.</p>
+          <p>Use <strong>Review</strong> to search verse references, manually entered or public-domain Scripture, thoughts, prayers, and topics. Licensed text displayed from the temporary cache is not part of the permanent journal search index. Combine the activity, topic, date, and favorites filters. Topic chips show entry counts. Change the entry order in Settings or with the sort button.</p>
         </article>
         <article class="faq-item">
           <h3>How do I practice a memory verse?</h3>
-          <p>Open a memory entry and tap <strong>Practice this verse</strong>. Hide or reveal the passage, write what you remember, and record the practice. An entry’s menu can also copy a Bible reading into Memory Verses with its selected topics.</p>
+          <p>Open a memory entry and tap <strong>Practice this verse</strong>. Hide or reveal the passage, write what you remember, and record the practice. For a version 1.2 licensed import, load the passage online or from its unexpired device cache before recording the practice. An entry’s menu can also copy a Bible reading into Memory Verses with its selected topics.</p>
         </article>
         <article class="faq-item">
           <h3>How do I record an answered prayer?</h3>
@@ -99,7 +108,7 @@
         </article>
         <article class="faq-item">
           <h3>What happens when I remove a profile or activity?</h3>
-          <p>Turning off an activity keeps its entries available in Review. Deleting a profile removes its writing from this device and iCloud, including other synced devices once they connect, and requires typing its name to confirm. The app also attempts to remove the API key stored on the device where you delete the profile. Export any writing you want to keep before deleting a profile. Profiles organize entries but do not lock them with a password.</p>
+          <p>Turning off an activity keeps its entries available in Review. Deleting a profile removes its writing from this device and iCloud, including other synced devices once they connect, and requires typing its name to confirm. For older versions, the app also attempts to remove an unused personal API key stored on the device where you delete the profile. Export any writing you want to keep before deleting a profile. Profiles organize entries but do not lock them with a password.</p>
         </article>
       </div>
     </section>

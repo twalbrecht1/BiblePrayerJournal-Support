@@ -23,9 +23,9 @@
   </header>
   <main class="policy-page" id="main">
     <div class="policy-heading">
-      <p class="eyebrow">Last updated October 6, 2026</p>
+      <p class="eyebrow">Last updated October 7, 2026</p>
       <h1>Privacy Policy</h1>
-      <p class="lead">Your journal writing is saved on your device and, from version 1.1, syncs through your private iCloud account when available. Scripture imports connect separately to outside providers.</p>
+      <p class="lead">Your journal writing is saved on your device and, from version 1.1, syncs through your private iCloud account when available. Scripture imports connect separately to outside providers. Version 1.2’s shared import service is prepared and awaiting activation; the differences from version 1.1 are described below.</p>
     </div>
     <div class="policy-content">
       <section>
@@ -38,11 +38,15 @@
       </section>
       <section>
         <h2>Scripture imports</h2>
-        <p>When you import a passage or load Verse of the Day, the selected passage reference and translation are sent to a Scripture provider. WEB and KJV use <a href="https://bible-api.com/">bible-api.com</a>. Configured licensed imports use <a href="https://api.bible/">API.Bible</a> and send the API key needed to authorize the request. These providers may receive connection information such as your IP address and handle it under their own policies. Your thoughts, prayer text, profile names, and topic selections are not included in these requests.</p>
+        <p>When you import a passage or load Verse of the Day, the selected passage reference and translation are sent to a Scripture provider. WEB and KJV use <a href="https://bible-api.com/">bible-api.com</a>. Version 1.1 licensed imports connect directly to <a href="https://api.bible/">API.Bible</a> using a personal key. Once activated, version 1.2 routes NIV, NLT, and NASB imports through the app’s service hosted on <a href="https://www.cloudflare.com/privacypolicy/">Cloudflare</a>, using the app owner’s provider key. The service receives the passage reference, translation, optional edition ID, and device verification data. It sends Scripture requests to API.Bible and does not receive your profile names, reflections, prayer text, or topic selections. Cloudflare, Apple’s device-verification service, and Scripture providers handle connection information under their respective policies.</p>
       </section>
       <section>
-        <h2>API keys and Scripture usage reports</h2>
-        <p>API.Bible keys are stored per profile in this device’s iOS Keychain. They remain on that device and are not synchronized through CloudKit, included in journal exports, or embedded in the app. Enter the key separately on another device when licensed imports are needed; translation selections synchronize with the profile. When API.Bible content is displayed, the app sends the provider its Scripture usage tokens with randomly generated installation and session identifiers. These reports do not contain your name or journal writing. See <a href="https://docs.api.bible/guides/fair-use/">API.Bible’s usage reporting guidance</a>.</p>
+        <h2>Device verification, API keys, and Scripture usage reports</h2>
+        <p>Version 1.2 does not request, store, or use a personal API.Bible key. The app owner’s key is stored as an encrypted server secret. Apple App Attest verifies genuine copies of the app without a journal login. A device-specific key identifier is kept in that device’s Keychain; the server retains its public verification key and request counter, without a profile ID or journal writing. Challenges expire after two minutes. The service keeps rate-limit counters and daily salted IP hashes, removed after expiry; it does not store raw IP addresses or request bodies in its database. Cloudflare may separately process connection information. Older personal API keys saved by version 1.1 remain unused in the device Keychain and do not sync or appear in exports. Deleting their profile attempts to remove them on that device. When API.Bible content is displayed, the app sends the provider Scripture usage tokens with randomly generated installation and session identifiers, without your name or journal writing. See <a href="https://docs.api.bible/resources/fair-use/">API.Bible’s usage reporting guidance</a>.</p>
+      </section>
+      <section>
+        <h2>Temporary licensed Scripture storage</h2>
+        <p>In version 1.2, new imported NIV, NLT, and NASB entries save passage references, editions, copyright information, and your own writing in the journal. Provider text is cached separately on the device and hosted service, refreshed after 14 days and never displayed after 30 days without a refresh. Device cache files are excluded from backups and protected while the device is locked; expired files are removed when the app next opens or accesses the cache. Server cleanup removes expired text. Licensed cached text and usage tokens are not saved to new permanent journal records or synchronized through CloudKit. Original records are preserved on upgrade; editing an older managed entry adopts reference storage. Manually entered and public-domain Scripture retains its existing local and iCloud behavior.</p>
       </section>
       <section>
         <h2>Advertising and analytics</h2>
@@ -50,7 +54,7 @@
       </section>
       <section>
         <h2>Exporting and sharing</h2>
-        <p>If you export a journal or share an entry, you choose its destination using the system’s Files or sharing controls. An export contains the profile’s writing, topics, settings, and entry metadata, and excludes API keys. Exported files and shared copies are handled by the locations and services you choose. Deleting an entry in the app does not delete copies you have exported or shared.</p>
+        <p>If you export a journal or share an entry, you choose its destination using the system’s Files or sharing controls. An export contains the profile’s writing, topics, settings, and entry metadata, and excludes API keys. In version 1.2, imported licensed Scripture text is excluded from both exports and entry shares; its reference, version, and attribution remain included. Exported files and shared copies are handled by the locations and services you choose. Deleting an entry in the app does not delete copies you have exported or shared.</p>
       </section>
       <section>
         <h2>Support and this website</h2>
@@ -58,7 +62,7 @@
       </section>
       <section>
         <h2>Retention and deletion</h2>
-        <p>Entries remain in local storage and, when synchronized, your private iCloud database until you delete them. Entry and profile deletions propagate to iCloud and other synced devices when connected. Deleting a profile removes its entries and attempts to remove the API key on the device where you perform the deletion; Keychain credentials on other devices may remain. Uninstalling the app, signing out of iCloud, or disabling sync does not delete writing already stored in iCloud. Delete unwanted profiles or entries while sync is available if you want those deletions to reach your other devices. You can explicitly remove a key in <strong>Settings → Bible Connection → Remove connection</strong>. Keychain credentials can remain after uninstalling an app, so remove the connection before uninstalling if you want to remove those credentials as well. Keep a backup of writing you want to retain.</p>
+        <p>Entries remain in local storage and, when synchronized, your private iCloud database until you delete them. Entry and profile deletions propagate to iCloud and other synced devices when connected. Deleting a profile removes its entries and attempts to remove the API key on the device where you perform the deletion; Keychain credentials on other devices may remain. Uninstalling the app, signing out of iCloud, or disabling sync does not delete writing already stored in iCloud. Delete unwanted profiles or entries while sync is available if you want those deletions to reach your other devices. Version 1.1 can explicitly remove a personal key in <strong>Settings → Bible Connection → Remove connection</strong>; version 1.2 removes that setup screen and no longer reads the key. Keychain credentials can remain after uninstalling an app, so remove a version 1.1 connection or delete its old profile before uninstalling if you want to remove those unused credentials as well. Keep a backup of writing you want to retain.</p>
       </section>
       <section>
         <h2>Policy changes and contact</h2>
