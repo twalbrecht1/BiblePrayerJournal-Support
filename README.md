@@ -4,7 +4,8 @@ Public support, feedback, and privacy pages for the Bible & Prayer Journal iPhon
 
 - Support: https://twalbrecht1.github.io/BiblePrayerJournal-Support/
 - Privacy: https://twalbrecht1.github.io/BiblePrayerJournal-Support/privacy.html
-- Support and feedback: use the issue forms in this repository. Submissions are public; do not include private journal writing or API keys.
+- Support email: `albycraftsupport@gmail.com`
+- Support and feedback links open pre-addressed email drafts. Do not include private journal writing, prayer requests, API keys, or other sensitive information.
 
 GitHub Pages publishes from the root of the `main` branch. The site uses plain HTML and CSS with no build dependencies or tracking scripts. Preview locally with `python3 -m http.server 8765 --bind 127.0.0.1`.
 
