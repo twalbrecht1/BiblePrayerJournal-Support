@@ -23,7 +23,7 @@
   </header>
   <main class="policy-page" id="main">
     <div class="policy-heading">
-      <p class="eyebrow">Last updated October 26, 2026</p>
+      <p class="eyebrow">Last updated October 28, 2026</p>
       <h1>Privacy Policy</h1>
       <p class="lead">Your journal writing is saved on your device and, from version 1.1, syncs through your private iCloud account when available. Scripture imports connect separately to outside providers. Version 1.2’s shared import service is active; the differences from version 1.1 are described below.</p>
     </div>
@@ -42,7 +42,7 @@
       </section>
       <section>
         <h2>Device verification, API keys, and Scripture usage reports</h2>
-        <p>Version 1.2 does not request, store, or use a personal API.Bible key. The app owner’s key is stored as an encrypted server secret. Apple App Attest verifies genuine copies of the app without a journal login. A device-specific key identifier is kept in that device’s Keychain; the server retains its public verification key and request counter, without a profile ID or journal writing. Challenges expire after two minutes. The service keeps rate-limit counters and daily salted IP hashes, removed after expiry; it does not store raw IP addresses or request bodies in its database. Cloudflare may separately process connection information. Older personal API keys saved by version 1.1 remain unused in the device Keychain and do not sync or appear in exports. Deleting their profile attempts to remove them on that device. When API.Bible content is displayed, the app sends the provider Scripture usage tokens with randomly generated installation and session identifiers, without your name or journal writing. See <a href="https://docs.api.bible/resources/fair-use/">API.Bible’s usage reporting guidance</a>.</p>
+        <p>Version 1.2 does not request, store, or use a personal API.Bible key. The app owner’s key is stored as an encrypted server secret. Apple App Attest verifies genuine copies of the app without a journal login. A device-specific key identifier is kept in that device’s Keychain; the server retains its public verification key and request counter, without a profile ID or journal writing. On iOS 27, signed device-verification data also includes the app’s build version and distribution category. The service validates those fields without retaining them separately. Challenges expire after two minutes. The service keeps rate-limit counters and daily salted IP hashes, removed after expiry; it does not store raw IP addresses or request bodies in its database. Cloudflare may separately process connection information. Older personal API keys saved by version 1.1 remain unused in the device Keychain and do not sync or appear in exports. Deleting their profile attempts to remove them on that device. When API.Bible content is displayed, the app sends the provider Scripture usage tokens with randomly generated installation and session identifiers, without your name or journal writing. See <a href="https://docs.api.bible/resources/fair-use/">API.Bible’s usage reporting guidance</a>.</p>
       </section>
       <section>
         <h2>Temporary licensed Scripture storage</h2>
